@@ -10,8 +10,11 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="description" content="Crptiam - Cryptocurrency ICO Landing Page HTML Template">
 		<meta name="keywords" content="bitcoin, bitcoin landing, blockchain, cryptocurrency, Cryptocurrency advisor, ICO Agency, ICO Consulting, ico landing, ico template, ico token, ico website">			
+		<!-- Favicon -->
+		<link rel="icon" href="{{asset('/assets/img/favicon.ico')}}">
 		<!-- SITE TITLE -->
-		<title>Crptiam - Cryptocurrency ICO Landing Page HTML Template</title>			
+		<title>Metavest Crypto Capital: Your Gateway to Crypto Investments</title>
+
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
 		<!-- Google Font -->
@@ -48,7 +51,7 @@
         <!-- START NAVBAR -->
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
     		<div class="container">
-			    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+			    <a class="navbar-brand" href="#"><img src="assets/img/default-monochrome.svg" alt=""></a>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="mdi mdi-menu"></span>
 			    </button><!--end button-->
@@ -61,7 +64,6 @@
 			            <li class="nav-item"><a class="nav-link" href="#download">App</a></li>
 			            <li class="nav-item"><a class="nav-link" href="/#team">Team</a></li>
 			            <li class="nav-item"><a class="nav-link" href="/#faq">faq</a></li>
-			            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 						@auth
 						<li class="nav-item">
 							<form method="POST" id="logoutForm" action="{{route('logout')}}">@csrf</form>
@@ -80,8 +82,8 @@
 				<div class="row">
 				  <div class="col-lg-7 col-sm-12 col-xs-12">
 					<div class="hero-text">
-						 <h2>Invest in Bitcoin: Secure Your Financial Future Today</h2>
-						 <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure seamless rental experience.</p>
+						 <h2>Revolutionize Your Wealth: Invest in the Future with Metavest</h2>
+						 <p>At Metavest, we've simplified investing so you can focus on what matters most – making sound financial decisions. With our cutting-edge technology, investing is as effortless as posting a tweet. Leave the technicalities to us, and enjoy the peace of mind that comes with a seamless investment experience.</p>
 						<div class="home_btn">
 							<a href="/register" class="btn_one">Get Started</a>
 							<a href="#about" class="btn_two">Learn More</a>
@@ -95,16 +97,16 @@
                             <div class="timer-area">
                                 <div>
                                     <span class="cdown days">
-                                        <span class="time-count">0</span> 
-                                        <p>Total Invested (USD)</p>
+                                        <span class="time-count">1000</span> 
+                                        <p>Invest (USD)</p>
                                     </span> 
                                     <span class="cdown hour">
-                                        <span class="time-count">0</span> 
-                                        <p>Total Value (USD)</p>
+                                        <span class="time-count">8</span> 
+                                        <p>Daily Profit (%)</p>
                                     </span> 
                                     <span class="cdown minutes">
-                                        <span class="time-count">00</span> 
-                                        <p>Total Percentage (USD)</p>
+                                        <span class="time-count">80</span> 
+                                        <p>Daily Profit (USD)</p>
                                     </span> 
                                 </div>
                             </div>
@@ -113,7 +115,9 @@
 						<div class="payment_img">
 							<a href="#"><img src="assets/img/icon/bitcoin.png" alt="logo-image" /></a>
 							<a href="#"><img src="assets/img/icon/ethereum.png" alt="logo-image" /></a>
-						</div>						
+							<a href="#"><img src="assets/img/icon/bnb.png" alt="bnb icon" /></a>
+							<a href="#"><img src="assets/img/icon/tether.png" alt="bnb icon" /></a>
+						</div> 			
 					</div>
 				  </div><!--- END COL -->			  
 				</div><!--- END ROW -->
@@ -126,28 +130,28 @@
 		   <div class="container">			
 				<div class="section-title text-center">
 					<h1>The most trusted cryptocurrency platform</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+					<p>This is why you should invest with us.</p>
 				</div>				
 				<div class="row">					
 					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 						<div class="single_about">
 							<img src="assets/img/icon/secure.png" alt="image" />
-							<h3>Secure storage</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+							<h3>Advanced Technology</h3>
+							<p>Our cutting-edge investment technology allows you to invest seamlessly and efficiently, with real-time market data and lightning-fast transactions.</p>
 						</div>
 					</div><!-- END COL -->			
 					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="single_about">
 							<img src="assets/img/icon/insurance.png" alt="image" />
-							<h3>Protected by insurance</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+							<h3>Robust Security Measures</h3>
+							<p>At Metavest, we take your security seriously. Our platform is equipped with state-of-the-art security features, including two-factor authentication, encryption, and secure storage, to ensure that your investments are protected from unauthorized access and cyber threats.</p>
 						</div>
 					</div><!-- END COL -->			
 					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 						<div class="single_about">
 							<img src="assets/img/icon/industry.png" alt="image" />
-							<h3>Industry best practices</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+							<h3>Expert Team</h3>
+							<p>Our team of experienced financial professionals is dedicated to ensuring the success of your investments, with personalized support and tailored advice every step of the way.</p>
 						</div>
 					</div><!-- END COL -->							
 				</div><!-- END ROW -->
@@ -160,19 +164,19 @@
 			<div class="container">					
 				<div class="section-title text-center">
 					<h1>How to Buy and Sell Cryptocurrency</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+					<p>From Exchanges to Wallets: Where to Buy and Safely Store Cryptocurrencies for New Investors</p>
 				</div>					
 				<div class="row">
 				  <div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="buy_sell_list">
 						<img src="assets/img/icon/bank.png" alt="image" />
-						<h4>Bank Transfers</h4>
-						<p>There are many variations of passages of Lorem Ipsum the majority.</p>
+						<h4>Cryptocurrency Exchanges</h4>
+						<p>Buy, sell, and trade cryptocurrencies on platforms like Binance, Coinbase, or Kraken.</p>
 					</div>
 					<div class="buy_sell_list">
 						<img src="assets/img/icon/wallet.png" alt="image" />
-						<h4>Online Wallets</h4>
-						<p>There are many variations of passages of Lorem Ipsum the majority.</p>
+						<h4>Peer-to-Peer Marketplaces</h4>
+						<p>Buy and sell cryptocurrencies directly with other users on marketplaces like LocalBitcoins or Paxful.</p>
 					</div>
 				  </div><!--- END COL -->	
 				  <div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
@@ -183,13 +187,13 @@
 				  <div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="buy_sell_list">
 						<img src="assets/img/icon/cash.png" alt="image" />
-						<h4>Cash Payment</h4>
-						<p>There are many variations of passages of Lorem Ipsum the majority.</p>
+						<h4>Bitcoin ATMs</h4>
+						<p>Buy and sell bitcoin and other cryptocurrencies using cash or debit cards on physical machines found in public places.</p>
 					</div>
 					<div class="buy_sell_list">
 						<img src="assets/img/icon/debit.png" alt="image" />
-						<h4>Debit/Credit Cards</h4>
-						<p>There are many variations of passages of Lorem Ipsum the majority.</p>
+						<h4>Cryptocurrency Brokers</h4>
+						<p>Buy and sell cryptocurrencies through a broker, similar to stocks, on platforms like eToro or Robinhood.</p>
 					</div>
 				  </div><!--- END COL -->				  
 				</div><!--- END ROW -->
@@ -202,28 +206,28 @@
 		   <div class="container">			
 				<div class="section-title text-center">
 					<h1>Get Started in a Few Minutes</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+					<p>Don't wait – start your journey to financial freedom today! Follow these simple steps to begin your cryptocurrency investment journey and unlock the potential for long-term wealth growth.</p>
 				</div>				
 				<div class="row text-center">					
 					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="single_how_to_buy">
 							<img src="assets/img/icon/man.png" alt="image" />
 							<h4>Create Account</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<p>Click the Get Started or Sign Up button above to join millions of satisfied users and begin your cryptocurrency investment journey.</p>
 						</div>
 					</div><!-- END COL -->			
 					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 						<div class="single_how_to_buy">
-							<img src="assets/img/icon/bank2.png" alt="image" />
-							<h4>Link Your Bank Account</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<img src="assets/img/icon/mail_check.png" alt="image" />
+							<h4>Verify Your Email</h4>
+							<p>Our email verification process ensures that only serious investors like you can access our platform, so you can invest with confidence.</p>
 						</div>
 					</div><!-- END COL -->			
 					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
 						<div class="single_how_to_buy">
 							<img src="assets/img/icon/buy.png" alt="image" />
-							<h4>Start Buying & Selling</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<h4>Start Investing</h4>
+							<p>Unlock the power of crypto investment by making your first deposit and start earning profits as soon as 24 hours from confirmation. Join the thousands of investors who have already benefited from our secure and reliable platform.</p>
 						</div>
 					</div><!-- END COL -->							
 				</div><!-- END ROW -->
@@ -242,9 +246,8 @@
 				  </div><!--- END COL -->				  
 				  <div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="about-text">
-						 <h2>Build the future  <br />of finance</h2>
-						 <p class="about-bold">We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure embarrassing hidden seamless.</p>
-						 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+						 <h2>Invest in the <br />Future with Crypto</h2>
+						 <p class="about-bold">Metavest is a leading investment platform that empowers users to invest in cryptocurrencies with ease. With our intuitive platform, investors can easily navigate the complex world of cryptocurrency and make informed investment decisions. Our secure and reliable platform provides users with the tools they need to achieve their financial goals, whether they're investing for the short-term or the long-term.</p>
 					</div>
 					<div class="about_btn">
 						<a href="https://www.youtube.com/watch?v=CMPebxJjE8o" class="video-play btn_one">Watch Video</a>
@@ -253,101 +256,14 @@
 				</div><!--- END ROW -->
 			</div><!--- END CONTAINER -->
 		</section>
-		<!-- END ABOUT US CONTENT -->	
-		
-		<!-- START TOKEN SALE -->
-		<section id="token_sale" class="token_sale_area section-padding">
-		   <div class="container">			
-				<div class="section-title text-center">
-					<h1>Pre sale & Values</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				</div>				
-				<div class="row text-center">					
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="single_token single_token_bg_one">
-							<h4>Start Time</h4>
-							<p>July 30,2022 (10:00 GMT)</p>
-						</div>
-					</div><!-- END COL -->
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<div class="single_token single_token_bg_two">
-							<h4>Tokens for sale</h4>
-							<p>900,000 ICC (9%)</p>
-						</div>
-					</div><!-- END COL -->
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-						<div class="single_token single_token_bg_three">
-							<h4>Acceptable Currency</h4>
-							<p>BTC, ETH, LTC</p>
-						</div>
-					</div><!-- END COL -->
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
-						<div class="single_token single_token_bg_four">
-							<h4>End Time</h4>
-							<p>Oct 30,2022 (10:00 GMT)</p>
-						</div>
-					</div><!-- END COL -->
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
-						<div class="single_token single_token_bg_five">
-							<h4>Soft Cops</h4>
-							<p>$90 M</p>
-						</div>
-					</div><!-- END COL -->
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
-						<div class="single_token single_token_bg_six">
-							<h4>Exchange rate</h4>
-							<p>1 BTC = 1940 ICC </p>
-						</div>
-					</div><!-- END COL -->
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s" data-wow-offset="0">
-						<div class="single_token single_token_bg_seven">
-							<h4>Available Token</h4>
-							<p>$100 M</p>
-						</div>
-					</div><!-- END COL -->
-					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s" data-wow-offset="0">
-						<div class="single_token single_token_bg_eight">
-							<h4>Minimal Transction</h4>
-							<p>1BTC/1ETH/1LTC</p>
-						</div>
-					</div><!-- END COL -->									
-				</div><!-- END ROW -->
-			</div><!-- END CONTAINER -->
-		</section>
-		<!-- END TOKEN SALE  -->	
-
-		
-		<!-- START TOKEN IMAGE AREA -->
-		<section class="token_img_area section-padding">
-			<div class="container">
-				<div class="section-title text-center">
-					<h1>Token Management</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				</div>			
-				<div class="row text-center">
-				  <div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-					<div class="token-img">
-						<img src="assets/img/02-Chat.png" class="img-fluid" alt="" />
-						<h4>Token Distribution</h4>
-					</div>
-				  </div><!--- END COL -->	
-				  <div class="col-lg-6 col-sm-12 col-xs-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-					<div class="fund-img">
-						<img src="assets/img/01-Chat.png" class="img-fluid" alt="" />
-						<h4>Fund Distribution</h4>
-					</div>
-				  </div><!--- END COL -->			  
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->
-		</section>
-		<!-- END TOKEN IMAGE AREA -->			
+		<!-- END ABOUT US CONTENT -->					
 		
 		<!-- START ROADMAP -->
 		<section id="roadmap" class="roadmap_area section-padding">
 			<div class="container">			
 				<div class="section-title text-center">
 					<h1>Roadmap</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+					<p>How we came here and where we are headed.</p>
 				</div>				
 				<div class="row">
 				  <div class="col-lg-12 col-sm-12 col-xs-12">
@@ -355,37 +271,37 @@
 					  <div class="time_contain time_left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="time_content">
 						  <h2>Project Idea - <span>July, 2022</span></h2>
-						  <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure embarrassing hidden seamless.</p>
+						  <p>At its core, Metavest was created with the idea of making cryptocurrency investment accessible to everyone. We recognized that many potential investors were hesitant to enter the market due to its perceived complexity and lack of user-friendly platforms. With this in mind, we set out to create a simple and intuitive investment platform that would make it easy for anyone to invest in cryptocurrencies, regardless of their level of expertise or experience.</p>
 						</div>
 					  </div>
 					  <div class="time_contain time_right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="time_content">
-						  <h2>Business Conception - <span>Aug, 2022</span></h2>
-						  <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure embarrassing hidden seamless.</p>
+						  <h2>Business Conception - <span>Oct, 2022</span></h2>
+						  <p>With that in mind, we set out to create a new kind of investment platform that would be intuitive, user-friendly, and accessible to all. We spent countless hours researching and testing different technologies and investment strategies, refining their approach along the way. After months of hard work, Metavest was launched, with a mission to empower users to achieve their financial goals through the power of cryptocurrency investment.</p>
 						</div>
 					  </div>
 						<div class="time_contain time_left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
 						<div class="time_content">
-						  <h2>Legal Review - <span>Sep, 2022</span></h2>
-						 <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure embarrassing hidden seamless.</p>
+						  <h2>Project Launch - <span>Dec, 2022</span></h2>
+						 <p>Metavest launched in Dec 2022, marking a major milestone for our team and investors. The initial launch was met with great excitement and enthusiasm, as users quickly recognized the power and potential of our innovative investment platform. In the first three weeks, we processed 7k investments, which served as a validation of our team's hard work and dedication.</p>
 						</div>
 					  </div>
 					  <div class="time_contain time_right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
 						<div class="time_content">
-						  <h2>Token Sale and Marketing - <span>Oct, 2022</span></h2>
-						  <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure embarrassing hidden seamless.</p>
+						  <h2>Metavest Token (MVT) Creation - <span>Aug, 2023</span></h2>
+						  <p>Metavest's custom cryptocurrency token, [token name], is set to launch in [year], marking a major milestone in our mission to provide a comprehensive and user-friendly investment platform</p>
 						</div>
 					  </div>
 					  <div class="time_contain time_left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
 						<div class="time_content">
-						  <h2>ICO and Token Design - <span>Nov, 2022</span></h2>
-						  <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure embarrassing hidden seamless.</p>
+						  <h2>ICO and Token Sale - <span>Sept, 2023</span></h2>
+						  <p>Metevest token will be available for public sale in September. That will be your chance to invest in the next big thing in crypto and take advantage of our team's plans to add even more utilities to our token. Don't miss out!.</p>
 						</div>
 					  </div>
 					  <div class="time_contain time_right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.7s" data-wow-offset="0">
 						<div class="time_content">
-						  <h2>Keep going - <span>Dec, 2022</span></h2>
-						  <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure embarrassing hidden seamless.</p>
+						  <h2>Keep going - <span>forever</span></h2>
+						  <p>At MetaVest, we're committed to constantly improving our platform for our valued investors. Our dedicated team works tirelessly to enhance every aspect of our service, from the user experience to the latest technology. You can trust us to keep building and delivering excellence, every day.</p>
 						</div>
 					  </div>
 					</div>					
@@ -401,7 +317,7 @@
 				<div class="row">					
 					<div class="col-lg-7 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="app-text">
-							 <h2>Install Crptiam app today</h2>
+							 <h2>Install Metavest app today</h2>
 							 <p>We offers users a fully operational long-term rental platform. It plans to leverages blockchain technology to ensure seamless rental experience and wants to help tenants unfreeze millions of dollars tied up in rental.</p> 
 							 <ul>
 								<li><span class="ti-download"></span>Download It for Free</li>
@@ -411,8 +327,8 @@
 							 </ul>
 						</div>
 						<div class="app_btn">
-							<a href="#" class="btn_one wow bounceIn" data-wow-delay=".3s"><i class="fa fa-apple"></i>App Store</a>
-							<a href="#" class="btn_two wow bounceIn" data-wow-delay=".4s"><i class="fa fa-play"></i>Google Play</a>
+							<a href="#download" class="btn_one wow bounceIn" data-wow-delay=".3s"><i class="fa fa-apple"></i>App Store</a>
+							<a href="#download" class="btn_two wow bounceIn" data-wow-delay=".4s"><i class="fa fa-play"></i>Google Play</a>
 						</div>
 					</div><!-- END COL -->	
 					<div class="col-lg-5 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">	
@@ -423,201 +339,54 @@
 				</div><!-- END ROW -->
 			</div><!-- END CONTAINER -->
 		</section>
-		<!-- END DOWNLOAD APP -->
-		
-		<!-- START TEAM -->
-		<section id="team" class="team_member section-padding">
-			<div class="container">				
-				<div class="section-title text-center">
-					<h1>Meet our Professionals</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				</div>				
-				<div class="row text-center">
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="our-team">
-							<img src="assets/img/team/team1.jpg" class="img-fluid" alt="board-image">
-							<h3>Charles Martin</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>
-					</div><!--- END COL -->														
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<div class="our-team">
-							<img src="assets/img/team/team2.jpg" class="img-fluid" alt="board-image">
-							<h3>Kathleen Hall</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>
-					</div><!--- END COL -->
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-						<div class="our-team">
-							<img src="assets/img/team/team3.jpg" class="img-fluid" alt="board-image">
-							<h3>Mildred Watson</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>
-					</div><!--- END COL -->
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
-						<div class="our-team">
-							<img src="assets/img/team/team4.jpg" class="img-fluid" alt="board-image">
-							<h3>Helen Petersen</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>
-					</div><!--- END COL -->
-					<div class="col-lg-3 col-sm-6 col-xs-12"></div><!--- END COL -->
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
-						<div class="our-team">
-							<img src="assets/img/team/team5.jpg" class="img-fluid" alt="board-image">
-							<h3>Joshua Ladner</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>
-					</div><!--- END COL -->
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s" data-wow-offset="0">
-						<div class="our-team">
-							<img src="assets/img/team/team6.jpg" class="img-fluid" alt="board-image">
-							<h3>Alexandra Cruz</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>
-					</div><!--- END COL -->				
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->		
-		</section>
-		<!-- END TEAM -->
-		
-		<!-- START BOARD ADVISOR -->
-		<section id="board_advisor" class="board_member section-padding">
-			<div class="container">				
-				<div class="section-title text-center">
-					<h1>Board Advisor</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				</div>				
-				<div class="row text-center">
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="our-board">
-							<img src="assets/img/board/1.jpg" class="img-fluid" alt="board-image">
-							<h3>Marina Mojo</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>						
-					</div><!--- END COL -->	
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<div class="our-board">
-							<img src="assets/img/board/2.jpg" class="img-fluid" alt="board-image">
-							<h3>Mark Linomi</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>						
-					</div><!--- END COL -->	
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-						<div class="our-board">
-							<img src="assets/img/board/3.jpg" class="img-fluid" alt="board-image">
-							<h3>Amira Yerden</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>						
-					</div><!--- END COL -->	
-					<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
-						<div class="our-board">
-							<img src="assets/img/board/4.jpg" class="img-fluid" alt="board-image">
-							<h3>Ayoub Fennouni</h3>
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<span>Crypto Developer</span>
-						</div>						
-					</div><!--- END COL -->				
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->		
-		</section>
-		<!-- END BOARD ADVISOR -->		
+		<!-- END DOWNLOAD APP -->	
 		
 		<!-- START PARTNER -->
 		<div class="partner_area section-padding">
 			<div class="container">				
 				<div class="section-title text-center">
 					<h1>Partners & Supporters</h1>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+					<p>We have partnereships with some of the biggest giants in the industry.</p>
 				</div>
 				<div class="row text-center">
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/1.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/Binance/Binance-Horizontal2-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/2.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/Coinbase/Coinbase-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/3.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/Ethereum/Ethereum-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/4.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/Tether_(cryptocurrency)/Tether_(cryptocurrency)-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/5.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/Bitcoin/Bitcoin-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/6.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/Ripple_(payment_protocol)/Ripple_(payment_protocol)-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/1.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/Meta_Platforms/Meta_Platforms-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-3 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s" data-wow-offset="0">
 						<div class="partner-logo">
-							<img src="assets/img/partner/2.png" alt="partner-image" />
+							<img src="https://download.logo.wine/logo/SpaceX/SpaceX-Logo.wine.png" alt="partner-image" />
 						</div>
 					</div><!-- END COL -->
 				</div><!-- END ROW -->				
@@ -630,7 +399,7 @@
 			<div class="container">
 				<div class="section-title text-center">
 					<h1>Frequently Asked Questions</h1>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+					<p>New users usually ask these questions</p>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-lg-7 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
@@ -643,43 +412,43 @@
 							</h2>
 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 							  <div class="accordion-body">
-								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+								Cryptocurrency is a digital or virtual form of currency that uses encryption techniques to secure and verify transactions and control the creation of new units.
 							  </div>
 							</div>
 						  </div>
 						  <div class="accordion-item">
 							<h2 class="accordion-header" id="headingTwo">
 							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								What are the best cryptocurrency for buy?
+								What crypto currency does Metavest Accept ?
 							  </button>
 							</h2>
 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 							  <div class="accordion-body">
-								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+								As at now, metavest accept's deposits in four cryto coins which are as follows Bitcoin(BTC), Ethereum(ETH), Binanace Coin(BNB) and Tether(USDT)
 							  </div>
 							</div>
 						  </div>
 						  <div class="accordion-item">
 							<h2 class="accordion-header" id="headingThree">
 							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								How to buy cryptocurrency?
+								Can I withdraw my Investment ?
 							  </button>
 							</h2>
 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 							  <div class="accordion-body">
-								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+								You can withdraw your investments and profits once the investment period has reached. However, it should be noted that withdrawal is not allowed untill the investment period is over.
 							  </div>
 							</div>
 						  </div>
 						  <div class="accordion-item">
 							<h2 class="accordion-header" id="headingFour">
 							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								How to sell cryptocurrency?
+								How to Invest?
 							  </button>
 							</h2>
 							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
 							  <div class="accordion-body">
-								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+								You can start investing right away by signing up and verifying your email address. With MetaVest, you can access a world of exciting investment opportunities, right at your fingertips.
 							  </div>
 							</div>
 						  </div>
@@ -700,40 +469,40 @@
 		   <div class="container">			
 				<div class="section-title text-center">
 					<h1>In the News</h1>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+					<p>Some latest from the crypto space.</p>
 				</div>				
 				<div class="row text-center">					
 					<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 						<div class="single_blog">
 							<div class="blog-img">
-								<img src="assets/img/blog/1.jpg" class="img-fluid" alt="image" />
-								<a href="blog.html">July 28, 2022</a>
+								<img src="https://public.bnbstatic.com/image/cms/blog/20230315/1b8a4c80-f91a-40b7-819c-ccfed5455246" class="img-fluid" alt="image" />
+								<a href="#blog">March 15, 2023</a>
 							</div>
-							<span><a href="blog.html">Development</a></span>
-							<h2><a href="blog.html">Fast food is popular because it's convenient</a></h2>
-							<a href="blog.html" class="btn_one">Read More</a>
+							<span><a href="#blog">Technology/Trading</a></span>
+							<h2><a target="blank" href="https://www.binance.com/en-NG/blog/all/introducing-the-binance-p2p-block-trade-zone-in-kenya-5751513665321161263">Introducing the Binance P2P Block trade zone in Kenya</a></h2>
+							<a target="blank" href="https://www.binance.com/en-NG/blog/all/introducing-the-binance-p2p-block-trade-zone-in-kenya-5751513665321161263" class="btn_one">Read More</a>
 						</div>						
 					</div><!-- END COL -->					
 					<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="single_blog">
 							<div class="blog-img">
-								<img src="assets/img/blog/2.jpg" class="img-fluid" alt="image" />
-								<a href="blog.html">July 29, 2022</a>
+								<img src="https://blog.ethereum.org/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fethereum-hackmd%2Fupload_c721600b9f9448a141574b76a38159e6.jpg&w=3840&q=75" class="img-fluid" alt="image" />
+								<a href="#blog">March 08, 2023</a>
 							</div>
-							<span><a href="blog.html">Technology</a></span>
-							<h2><a href="blog.html">The incredible thing about Virtual Reality</a></h2>
-							<a href="blog.html" class="btn_one">Read More</a>
+							<span><a href="#blog">Technology/Protocol</a></span>
+							<h2><a target="blank" href="https://blog.ethereum.org/2023/03/08/goerli-shapella-announcement">Goerli Shapella Announcement</a></h2>
+							<a target="blank" href="https://blog.ethereum.org/2023/03/08/goerli-shapella-announcement" class="btn_one">Read More</a>
 						</div>						
 					</div><!-- END COL -->					
 					<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 						<div class="single_blog">
 							<div class="blog-img">
-								<img src="assets/img/blog/3.jpg" class="img-fluid" alt="image" />
-								<a href="blog.html">July 30, 2022</a>
+								<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*rQMsPIGIJUUBFjFjo6xIGQ.png" class="img-fluid" alt="image" />
+								<a href="#blog">February 09, 2023</a>
 							</div>
-							<span><a href="blog.html">Fashion</a></span>
-							<h2><a href="blog.html">For good results must be make good plan </a></h2>
-							<a href="blog.html" class="btn_one">Read More</a>
+							<span><a href="#blog">Technology/Finance</a></span>
+							<h2><a target="blank" href="https://blog.bitcoin.com/yield-farming-is-live-on-bitcoin-coms-verse-dex-caf871aa6aec">Yield farming is live on Bitcoin.com's Verse DEX</a></h2>
+							<a target="blank" href="https://blog.bitcoin.com/yield-farming-is-live-on-bitcoin-coms-verse-dex-caf871aa6aec" class="btn_one">Read More</a>
 						</div>						
 					</div><!-- END COL -->						
 				</div><!-- END ROW -->
@@ -748,78 +517,20 @@
 					<div class="col-lg-8 offset-lg-2 col-sm-12 col-xs-12 text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 						<div class="newsletter_form">
 							<h4>Subscribe our newsletter for get updates <br />We don't make any spam</h4>
-							<form action="#">
-								<input type="text" class="subscribe__input" placeholder="Email Address">
-								<button type="button" class="btn_one">Subscribe</button>
+							<form action="{{ route('subscribe') }}" method="POST">
+								@csrf
+								<input type="email" name="email" class="subscribe__input" placeholder="Email Address" required>
+								<button type="submit" class="btn_one">Subscribe</button>
 							</form>
+							@if(session('newsletter'))
+							<p class="text-success">Email subscribed Successfully</p>
+							@endif
 						</div>					
 					</div><!-- END COL -->							
 				</div><!-- END ROW -->
 			</div><!-- END CONTAINER -->
 		</section>
-		<!-- END PROMOTION -->	
-		
-		<!-- START CONTACT -->
-		<section id="contact" class="contact_us section-padding">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="contact">
-							<h4>Write Your Message </h4>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-							<form class="form" name="enq" method="post" action="https://bestwpware.com/html/tf/crptiam-demo/crptiam/contact.php" onsubmit="return validation();">
-								<div class="row">
-									<div class="form-group col-md-6">
-										<input type="text" name="name" class="form-control" placeholder="Name" required="required">
-									</div>
-									<div class="form-group col-md-6">
-										<input type="email" name="email" class="form-control" placeholder="Email" required="required">
-									</div>
-									<div class="form-group col-md-12">
-										<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
-									</div>
-									<div class="form-group col-md-12">
-										<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
-									</div>
-									<div class="col-md-12 text-center">
-										<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-lg contact_btn" title="Submit Your Message!">Submit Message</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div><!-- END COL  -->	
-					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">	
-						<div class="address_bg">
-							<div class="single_address">
-								<div class="address_br"><span class="ti-location-pin"></span></div>
-								<h4>Address</h4>
-								<p>3481 Melrose Place, Beverly Hills</p>
-							</div>							
-							<div class="single_address">
-								<div class="address_br"><span class="ti-mobile"></span></div>
-								<h4>Phone</h4>
-								<p>+512 513 96324</p>
-							</div>	
-							<div class="single_address">
-								<div class="address_br"><span class="ti-email"></span></div>
-								<h4>Email</h4>
-								<p>example@example.com</p>
-							</div>
-							<div class="single_address">
-								<div class="address_br"><span class="ti-alarm-clock"></span></div>
-								<h4>Working Hours</h4>
-								<p>Mon to Sat 9:00am to 5:00pm</p>
-							</div>
-						</div>
-					</div><!-- END COL  -->					
-				</div><!-- END ROW -->
-			</div><!-- END CONTAINER -->
-		</section>
-		<!-- END CONTACT -->		
-
-		<div class="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.957183635167!2d-74.00402768559431!3d40.71895904512855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598a1316e7a7%3A0x47bb20eb6074b3f0!2sNew%20Work%20City%20-%20(CLOSED)!5e0!3m2!1sbn!2sbd!4v1600305497356!5m2!1sbn!2sbd" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-		</div>	
+		<!-- END PROMOTION -->				
 		
 		<!-- START FOOTER -->
 		<div class="footer">
@@ -832,11 +543,10 @@
 								<li><a href="#">Terms of use</a></li>
 								<li><a href="#">Privacy Policy</a></li>
 								<li><a href="#">Cookie Policy</a></li>
-								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</div>						
 						<div class="footer_copyright">
-							<p>&copy; 2022 Crptiam. All Rights Reserved.</p>
+							<p>&copy; <script> const date = new Date(); document.write(date.getFullYear())</script> Metavest. All Rights Reserved.</p>
 						</div>	
 						<div class="footer_profile">
 							<ul>

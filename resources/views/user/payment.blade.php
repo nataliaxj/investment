@@ -38,7 +38,7 @@
                         @endif
                         <img src="https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg?w=400&h=300&c=crop" alt="barcode-image" class="img-fluid me-2" /> 
                         <div class="mt-3 text-center">
-                            <p id="address" class="font-weight-bolder"><strong>0xe640Ba693507323D7bd74dBaBE04549725de2B5a</strong></p>
+                            <p id="address" class="font-weight-bolder"><strong>{{ $payment->currency->address}}</strong></p>
                             <button data-clipboard-target="#address" class="btn btn-sm btn-info btn-inline btnCopy">copy</button> 
                         </div>     
                     </div> <!-- end col-->
@@ -56,7 +56,7 @@
                                         <th class="text-dark">Amount (USD)</th>
                                         <th class="text-dark">Tax (USD)</th>
                                         <th class="text-end text-dark">Total (USD)</th>
-                                        <th class="text-end text-dark">Amount to Send</th>
+                                        <th class="text-end text-dark">Amount to Send({{$payment->currency->name}})</th>
                                     </tr>
                                 </thead>
                                 <tbody>

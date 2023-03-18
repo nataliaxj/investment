@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://investx-admin-template.multipurposethemes.com/New_InvestX-main-files/html/images/favicon.ico">
+    <link rel="icon" href="{{asset('/assets/img/favicon.ico')}}">
 
-    <title>InvestX - @yield('title')</title>
+    <title>Metavest Crypto Capital: - @yield('title')</title>
     
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="{{asset('dash/src/css/vendors_css.css')}}">
@@ -29,17 +29,17 @@
   <header class="main-header">
 	<div class="d-flex align-items-center logo-box justify-content-start">	
 		<!-- Logo -->
-		<a href="index.html" class="logo">
-		  <!-- logo-->
-		  <div class="logo-mini w-40">
-			  <span class="light-logo"><img src="{{asset('dash/images/logo-letter.png')}}" alt="logo"></span>
-			  <span class="dark-logo"><img src="{{asset('dash/images/logo-letter-white.png')}}" alt="logo"></span>
-		  </div>
+		{{-- <a href="#">
 		  <div class="logo-lg">
-			  <span class="light-logo"><img src="{{asset('dash/images/logo-dark-text.png')}}" alt="logo"></span>
-			  <span class="dark-logo"><img src="{{asset('dash/images/logo-light-text.png')}}" alt="logo"></span>
+			  <span class="light-logo"><img src="{{asset('assets/img/logo_dash.png')}}" alt="logo" /></span>
+			  <span class="dark-logo"><img src="{{asset('assets/img/default-monochrome.svg')}}" alt="logo" /></span>
 		  </div>
-		</a>	
+		</a>	 --}}
+		<a href="/">
+		  <div class="logo-lg">
+			  <img src="{{asset('assets/img/logo_dash.png')}}" alt="logo" />
+		  </div>
+		</a>
 	</div>   
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top">
@@ -126,7 +126,7 @@
 			  <ul class="sidebar-menu" data-widget="tree">
 				<li>
 					<a class="text-dark lead" href="#">
-					  <span>AVAIL BAL: ${{ Auth::user()->userDetails->balance }}</span>
+					  <span>AVAIL BAL: ${{  number_format(Auth::user()->getBalance(), 2, '.', ',') }}</span>
 					</a>
 				  </li>
 			  	<li>
@@ -148,13 +148,13 @@
 					</a>
 				  </li>
 				<li>
-				  <a href="#">
+				  <a href="{{ route('withdraw')}}">
 					<i data-feather="dollar-sign"></i>
 					<span>Withdraw</span>
 				  </a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="{{ route('transactions')}}">
 					  <i data-feather="database"></i>
 					  <span>Transactions</span>
 					</a>
@@ -232,7 +232,7 @@
 		  </li>
 		</ul>
     </div>
-	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.multipurposethemes.com/">Multipurpose Themes</a>. All Rights Reserved.
+	  &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Metavest</a>. All Rights Reserved.
   </footer>
   <!-- Side panel -->   
   <!-- quick_user_toggle -->

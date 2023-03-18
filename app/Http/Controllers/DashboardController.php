@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Currency;
 use App\Models\Deposit;
 use App\Models\Investment;
+use App\Models\NewsletterSubscriber;
 use App\Models\Plan;
+use App\Models\Withdrawal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session as FacadesSession;
@@ -15,7 +17,7 @@ class DashboardController extends Controller
     public function index()
     {
         $user = auth()->user();
-        if ($user->userDetails->deposits == 0)
+        if ($user->getBalance() == 0)
         {
             return view('user.d-prompt');
         }
@@ -80,7 +82,7 @@ class DashboardController extends Controller
     public function invest()
     {
         $user = auth()->user();
-        if ($user->userDetails->balance == 0)
+        if ($user->getBalance() == 0)
         {
             return view('user.d-prompt');
         }
@@ -107,7 +109,7 @@ class DashboardController extends Controller
             return back();
         }
 
-        if ($request->amount > $user->userDetails->balance) {
+        if ($request->amount > $user->getBalance()) {
             FacadesSession::flash('amountError', "The inputted amount is greater than your balance, Please deposit to continue");
 
             return back();
@@ -121,7 +123,7 @@ class DashboardController extends Controller
 
         $investment->save();
 
-        $user->userDetails()->decrement('balance', $request->amount);
+        // $user->userDetails()->decrement('balance', $request->amount);
 
         return redirect()->route('investments');
     }
@@ -144,6 +146,7 @@ class DashboardController extends Controller
                     $investment->save();
 
                     $user->userDetails()->increment('balance', $investment->totalProfits());
+
                 }
             }
         }
@@ -151,10 +154,69 @@ class DashboardController extends Controller
         return view('user.investments', compact('investments'));
     }
 
+    public function subscribe(Request $request)
+    {
+        $this->validate($request, [
+            'email' => "required|email|unique:newsletter_subscribers"
+        ]);
+        $subscriber = new NewsletterSubscriber();
+        $subscriber->email = $request->email;
+
+        $subscriber->save();
+
+        FacadesSession::flash('newsletter', "User subscribed successfully");
+
+        return redirect()->back();
+    }
+
     public function plans()
     {
         $plans = Plan::all();
 
         return view('user.plans', compact('plans'));
+    }
+
+    public function withdraw()
+    {
+        $currencies = Currency::all();
+        return view('user.withdraw', compact('currencies'));
+    }
+
+    public function withdrawalSave(Request $request)
+    {
+        $this->validate($request, [
+            'amount' => "required|integer",
+            'currency' => 'required|integer',
+            'wallet' => 'required|min:20'
+        ]);
+
+        $withdrawable = Auth::user()->withdrawable();
+        if ($request->amount > $withdrawable) {
+            FacadesSession::flash("withdrawErr", "You can only withdraw a maximum of $".$withdrawable);
+            return back();
+        }
+
+        $withdrawal = new Withdrawal();
+
+        $withdrawal->currency_id = $request->currency;
+        $withdrawal->amount = $request->amount;
+        $withdrawal->wallet_address = $request->wallet;
+        $withdrawal->user_id = Auth::id();
+
+        $withdrawal->save();
+
+        FacadesSession::flash("withdrawSuccess", "Your withdrawal of ".$request->amount."has been submitted for processing");
+
+        return back();
+
+    }
+
+    public function transactions()
+    {
+        $deposits = Auth::user()->deposits()->with('currency')->get();
+        $withdrawals = Auth::user()->withdrawals()->with('currency')->get();
+        $investments = Auth::user()->investments()->with('plan')->get();
+
+        return view('user.transactions', compact('deposits', 'withdrawals', 'investments'));
     }
 }

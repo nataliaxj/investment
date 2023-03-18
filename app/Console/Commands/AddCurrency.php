@@ -33,15 +33,19 @@ class AddCurrency extends Command
         $currencies = [
             [
                 "name" => "btc",
-                "address" => "0x2d0B193778eD8A19dEd11995634250694C493147_btc"
+                "address" => "bc1qck8kk3jv7em8fcjxz0zrpfvslat56x4nkzkuxj"
             ],
             [
                 "name" => "eth",
-                "address" => "0x2d0B193778eD8A19dEd11995634250694C493147_eth"
+                "address" => "0x900f776Af4882DF3b46C22A26Cc487A50A215E84"
             ],
             [
                 "name" => "bnb",
-                "address" => "0x2d0B193778eD8A19dEd11995634250694C493147_bnb"
+                "address" => "0x900f776Af4882DF3b46C22A26Cc487A50A215E84"
+            ],
+            [
+                "name" => "usdt",
+                "address" => "TG8uqM7wsgWmfh2hCo5PAbAebzBvKNKkwV"
             ]
         ];
 

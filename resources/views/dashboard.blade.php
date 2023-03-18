@@ -19,26 +19,30 @@
                             <div class="row">
                                 <div class="col-lg-3 col-12 be-1">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <p class="mb-0 text-fade">Index</p>
-                                        <p class="mb-0 text-success">6210</p>
+                                        <p class="mb-0 text-fade">Balance</p>
+                                        <p class="mb-0 text-success">0000</p>
                                     </div>
                                     <div>
-                                        <h1 class="mb-0 fw-600">00,000.00 <small class="ms-10 me-5"><i class="text-success fa fa-caret-up"></i> 0.00%</small></h1>
+                                        <h1 class="mb-0 fw-600">${{ number_format(Auth::user()->getBalance(), 2, '.', ',') }} <small class="ms-10 me-5"><i class="text-success fa fa-caret-up"></i> 0.00%</small></h1>
                                     </div>
                                 </div>
                                 <div class="col-lg-9 col-12">
                                     <div class="ms-lg-20 mt-20 mt-lg-0 d-flex justify-content-between align-items-center">
                                         <div>
-                                            <p class="mb-0 text-fade">Your investment</p>
-                                            <h2 class="mb-0 fw-600">$0,000</h2>
+                                            <p class="mb-0 text-fade">Your investments</p>
+                                            <h2 class="mb-0 fw-600">${{ number_format(Auth::user()->getTotalInvestmentsUSD(), 2, '.', ',') }}</h2>
                                         </div>
                                         <div>
-                                            <p class="mb-0 text-fade">Current Value</p>
-                                            <h2 class="mb-0 fw-600 text-success">$00,000</h2>
+                                            <p class="mb-0 text-fade">Uninvested Balance</p>
+                                            <h2 class="mb-0 fw-600">${{ number_format(Auth::user()->getUninvestedAmount(), 2, '.', ',') }}</h2>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0 text-fade">Current Profits</p>
+                                            <h2 class="mb-0 fw-600 text-success">${{ number_format(Auth::user()->userDetails->balance, 2, '.', ',') }}</h2>
                                         </div>
                                         <div>
                                             <p class="mb-0 text-fade">ROI</p>
-                                            <h2 class="mb-0 fw-600 text-success">+00.0%</h2>
+                                            <h2 class="mb-0 fw-600 text-success">+{{ number_format(Auth::user()->getTotalROI(), 2, '.', ',') }}%</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -53,9 +57,9 @@
                                     <div class="d-flex justify-content-start align-items-center mt-md-20 mt-0">
                                         <div id="portfolio-chart"></div>
                                         <ul class="list-unstyled" style="margin-left: -21px;">
-                                            <li><span class="badge badge-primary badge-dot me-10"></span> Large Cap Funds</li>
-                                            <li><span class="badge badge-info badge-dot me-10"></span> Diversified Funds</li>
-                                            <li><span class="badge badge-success badge-dot me-10"></span> Debt Funds</li>
+                                            <li><span class="badge badge-primary badge-dot me-10"></span> Deposits</li>
+                                            <li><span class="badge badge-info badge-dot me-10"></span> Investments</li>
+                                            <li><span class="badge badge-success badge-dot me-10"></span> Profits</li>
                                         </ul>
                                     </div>
                                 </div>

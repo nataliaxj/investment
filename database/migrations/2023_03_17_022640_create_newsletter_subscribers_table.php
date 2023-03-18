@@ -13,13 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('withdrawals', function (Blueprint $table) {
+        Schema::create('newsletter_subscribers', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->string('amount');
-            $table->text('wallet_address');
-            $table->integer('currency_id');
-            $table->enum('status', ["Pending", "Processing", "Confirmed"])->default('Pending');
+            $table->string('email');
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('withdrawals');
+        Schema::dropIfExists('newsletter_subscribers');
     }
 };

@@ -28,6 +28,11 @@ Route::get('invest', [DashboardController::class, 'invest'])->middleware(['auth'
 Route::post('invest', [DashboardController::class, 'investStore'])->middleware(['auth', 'verified'])->name('invest.store');
 Route::get('/investments', [DashboardController::class, 'investments'])->middleware(['auth', 'verified'])->name('investments');
 Route::get('/plans', [DashboardController::class, 'plans'])->middleware(['auth', 'verified'])->name('plans');
+Route::get('/withdraw', [DashboardController::class, 'withdraw'])->middleware(['auth', 'verified'])->name('withdraw');
+Route::post('/withdraw', [DashboardController::class, 'withdrawalSave'])->middleware(['auth', 'verified'])->name('withdraw.store');
+Route::get('/transactions', [DashboardController::class, 'transactions'])->middleware(['auth', 'verified'])->name('transactions');
+
+Route::post('/subscribe', [DashboardController::class, 'subscribe'])->name('subscribe');
 
 
 Route::middleware('auth', 'verified')->group(function () {

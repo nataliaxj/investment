@@ -11,7 +11,7 @@
 		<meta name="description" content="Crptiam - Cryptocurrency ICO Landing Page HTML Template">
 		<meta name="keywords" content="bitcoin, bitcoin landing, blockchain, cryptocurrency, Cryptocurrency advisor, ICO Agency, ICO Consulting, ico landing, ico template, ico token, ico website">			
 		<!-- SITE TITLE -->
-		<title>Crptiam - @yield('content')</title>			
+		<title>Metavest - @yield('title')</title>			
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">		
 		<!-- Google Font -->
@@ -54,7 +54,7 @@
         <!-- START NAVBAR -->
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
     		<div class="container">
-			    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+			    <a class="navbar-brand" href="index.html"><img src="assets/img/default-monochrome.svg" alt=""></a>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="mdi mdi-menu"></span>
 			    </button><!--end button-->
